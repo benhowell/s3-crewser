@@ -24,7 +24,6 @@
 (defn list-objects []
   (s3/list-objects cred :bucket-name bucket))
 
-
 (defn delete-object-by-key! [key]
   (try
     (s3/delete-object cred bucket key)
@@ -34,7 +33,6 @@
   (let [key (second (s/split url (re-pattern (str bucket "/")) 2))]
     (delete-object-by-key! key)))
 ;; end amazonica specific
-
 
 ;; s3-beam specific
 (defn s3-sign []
