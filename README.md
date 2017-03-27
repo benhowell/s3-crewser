@@ -1,5 +1,5 @@
 # s3-crewser
-AWS s3 upload and delete helper for clojure web apps
+AWS s3 upload, list and delete helper for clojure web apps
 
 Small server-side wrapper for amazonica and s3-beam for uploading and deleting files from your clojure(script) web app.
 
