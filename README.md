@@ -29,6 +29,8 @@ Delete an object like so:
    [server.controllers.aws.s3 :as aws-s3]))
    
 (aws-s3/delete-object-by-url! url)
+;; OR
+(aws-s3 delete-object-by-key! key)
 ```
 
 ## Client-side usage
