@@ -43,3 +43,8 @@ Upload an object like so (where `uploaded` is a core.async channel):
 ```
 
 For more info on how to use channels with s3-beam, see the s3-beam documentation: https://github.com/martinklepsch/s3-beam#3-integrate-the-upload-pipeline-into-your-frontend
+
+
+
+### Obscure name
+s3-crewser is a silly name made from s3 CReate dElete for broWSER
