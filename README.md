@@ -30,7 +30,7 @@ Delete an object like so:
    
 (aws-s3/delete-object-by-url! url)
 ;; OR
-(aws-s3 delete-object-by-key! key)
+(aws-s3/delete-object-by-key! key)
 ```
 
 ## Client-side usage
