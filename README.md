@@ -31,3 +31,15 @@ Delete an object like so:
 (aws-s3/delete-object-by-url! url)
 ```
 
+## Client-side usage
+Upload an object like so (where `uploaded` is a core.async channel):
+```cljs
+(ns client.some.namespace
+  (:require 
+    [s3-beam.client :as s3]))
+    
+(s3/s3-pipe uploaded)
+    
+```
+
+For more info on how to use channels with s3-beam, see the s3-beam documentation: https://github.com/martinklepsch/s3-beam#3-integrate-the-upload-pipeline-into-your-frontend
