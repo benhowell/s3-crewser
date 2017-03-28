@@ -22,6 +22,15 @@ Wherever you define your routes, add a path for "/sign" like so:
 ```
 
 ## Server-side usage
+List objects like so:
+```clj
+(ns server.some.namespace
+  (:require
+   [server.controllers.aws.s3 :as aws-s3]))
+   
+(aws-s3/list-objects)
+```
+
 Delete an object like so:
 ```clj
 (ns server.some.namespace
