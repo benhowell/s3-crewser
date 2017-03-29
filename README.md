@@ -1,7 +1,7 @@
 # s3-crewser
 AWS s3 upload, list and delete recipe for clojure web apps.
 
-Small server-side wrapper for amazonica and s3-beam for uploading, listing and deleting files from your clojure(script) web app. The main reason to use both amazonica and s3-beam in the same implementation is to allow direct from browser uploading of files to AWS (therefore saving any server-side handling of those files) and leverage amazonica to do everything else (and again, not have to do any server-side handling of the actual files).
+Small server-side wrapper for amazonica and s3-beam for uploading, listing and deleting files from your clojure(script) web app. The main reason to use both s3-beam and amazonica in the same implementation is to leverage s3-beam to perform direct from browser uploading of files to s3 (therefore saving any server-side handling of those files) and to leverage amazonica for everything else (and again, not have to do any server-side handling of the actual files).
 
 Requires:
  - https://github.com/martinklepsch/s3-beam
